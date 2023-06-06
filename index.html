@@ -25,7 +25,13 @@
             </h1>
         </header>
         <main>
-            <div>
+            <div class="to-do-list-container container ">
+                <ul>
+                    <li v-for="(text, done, index) in toDoList">
+                        <p>{{ text.text }}</p>
+                        
+                    </li>
+                </ul>
 
             </div>
         </main>

@@ -5,3 +5,9 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
+.to-do-list-container{
+    height: 650px;
+    background-color: aqua;
+    padding: 2rem;
+}

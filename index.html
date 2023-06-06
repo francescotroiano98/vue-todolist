@@ -26,14 +26,14 @@
         </header>
         <main>
             <div class="to-do-list-container container ">
-                <ul>
-                    <li v-for="(item, index) in toDoList" :class="item.done === true ? 'linethrough' : ''">
-                        
-                        <p>{{ item.text }}</p>
-                        
+                <ul v-if="toDoList.length > 0">
+                    <li class="d-flex align-items-center justify-content-between" v-for="(item, index) in toDoList">
+
+                        <p class="mb-0" :class="item.done === true ? 'linethrough' : ''">{{ item.text }} </p>
+                        <i class="fa-solid fa-circle-xmark" style="color: #ff0000;" @click="removeLi(index)"></i>
                     </li>
                 </ul>
-
+                <p v-else class="empty-list-message">Nessun elemento nella lista.</p>
             </div>
         </main>
         

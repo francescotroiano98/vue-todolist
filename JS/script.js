@@ -59,7 +59,13 @@ createApp({
   },
   methods: {
 
+    removeLi(index) {
+        if(index >= this.toDoList.length || index < 0){
 
+        } else {
+        this.toDoList.splice(index, 1);
+        }
+    }
 
   },
 }).mount('#app');

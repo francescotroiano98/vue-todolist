@@ -28,6 +28,7 @@
             <div class="to-do-list-container container ">
                 <ul>
                     <li v-for="(item, index) in toDoList" :class="item.done === true ? 'linethrough' : ''">
+                        
                         <p>{{ item.text }}</p>
                         
                     </li>

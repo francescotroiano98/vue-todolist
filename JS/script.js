@@ -53,7 +53,13 @@ createApp({
                 
               },  
 
-        ]
+        ],
+        
+        newListElement: {
+            text: "", // Aggiungi la proprietà "text" all'oggetto newListElement
+            done: false, // Aggiungi la proprietà "done" all'oggetto newListElement
+          },
+
  
     };
   },
@@ -65,7 +71,14 @@ createApp({
         } else {
         this.toDoList.splice(index, 1);
         }
-    }
+    },
+
+    addNewElement(todoElement) {
+
+        this.toDoList.push(todoElement);
+        
+        this.newListElement = { text: "", done: false };
+    },
 
   },
 }).mount('#app');

@@ -29,7 +29,7 @@ createApp({
               },
               {
                 text : "Stendere i panni",
-                done : false,
+                done : true,
                 
               },
               {
@@ -58,6 +58,8 @@ createApp({
     };
   },
   methods: {
+
+
 
   },
 }).mount('#app');

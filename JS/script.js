@@ -76,8 +76,12 @@ createApp({
     addNewElement(todoElement) {
 
         this.toDoList.push(todoElement);
-        
+
         this.newListElement = { text: "", done: false };
+    },
+
+    changeLineThrough(index){
+        this.toDoList[index].done = !this.toDoList[index].done
     },
 
   },
